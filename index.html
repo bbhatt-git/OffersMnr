@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OffersMNR</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Outfit', 'sans-serif'] },
+          colors: {
+            'dark-bg': '#0B0E14',
+            'card-bg': 'rgba(255,255,255,0.03)',
+            'neon-blue': '#3B82F6',
+            'neon-purple': '#8B5CF6',
+            'neon-pink': '#EC4899'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-dark-bg text-white selection:bg-neon-pink selection:text-white">
+
+  <!-- Ambient Background -->
+  <div class="ambient-bg"></div>
+
+  <!-- Navbar injected by JS -->
+  <header id="app-nav"></header>
+
+  <!-- Page Content -->
+  <main id="app-content" class="pt-24"></main>
+
+  <!-- Footer injected by JS -->
+  <footer id="app-footer"></footer>
+
+  <!-- Global Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/pages/home.js"></script>
+  <script src="assets/js/pages/categories.js"></script>
+  <script src="assets/js/pages/deals.js"></script>
+  <script src="assets/js/pages/stores.js"></script>
+  <script src="assets/js/pages/checkout.js"></script>
+  <script src="assets/js/pages/login.js"></script>
+  <script src="assets/js/pages/register.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>
