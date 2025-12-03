@@ -1,0 +1,85 @@
+body {
+  background-color: #0B0E14;
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Ambient neon blobs - made them slightly larger and more diffused */
+.ambient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+}
+.ambient-bg::before,
+.ambient-bg::after {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  filter: blur(160px);
+  opacity: 0.25; /* Reduced opacity for subtlety */
+  transition: opacity 0.5s;
+}
+.ambient-bg::before {
+  background: #8B5CF6; /* Neon Purple */
+  top: 15%;
+  left: 10%;
+}
+.ambient-bg::after {
+  background: #3B82F6; /* Neon Blue */
+  bottom: 10%;
+  right: 15%;
+}
+
+/* Glass - Modern Frosted Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05); /* Slightly darker background */
+  backdrop-filter: blur(20px); /* Increased blur */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Slightly more visible border */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Navbar glass */
+.glass-nav {
+  background: rgba(11, 14, 20, 0.75); /* Darker background for fixed header visibility */
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Scroll reveal animation styles */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition-delay: var(--delay, 0s);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* Utility for a premium, lift-up hover effect */
+.hover-lift:hover {
+  box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.15), 0 4px 6px -4px rgba(139, 92, 246, 0.15); /* Subtle purple shadow */
+  border-color: rgba(139, 92, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Utility for sleek buttons */
+.btn-primary {
+  @apply bg-neon-blue hover:bg-neon-blue/80 transition duration-300 font-semibold shadow-lg shadow-neon-blue/30;
+}
+.btn-secondary {
+  @apply bg-neon-pink hover:bg-neon-pink/80 transition duration-300 font-semibold shadow-lg shadow-neon-pink/30;
+}
