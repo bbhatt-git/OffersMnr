@@ -49,18 +49,18 @@ window.products = [
     price: 1500,
     oldPrice: 2200,
     category: "Food & Beverages",
-    color: "neon-purple",
-    image: "https://placehold.co/600x800/8B5CF6/FFFFFF?text=Pizza"
+    color: "",
+    image: "https://images.pexels.com/photos/4109084/pexels-photo-4109084.jpeg?auto=compress&cs=tinysrgb&w=600"
   },
   {
-    id: "organic-veg",
-    title: "Organic Vegetable Box",
-    store: "Mellow Groceries",
+    id: "laptop",
+    title: "ASUS Gaming Laptop Pro 16-inch + Free Accessories",
+    store: "TechHub Mnr",
     price: 1200,
     oldPrice: 1500,
-    category: "Groceries",
+    category: "Electronics",
     color: "green-500",
-    image: "https://placehold.co/600x800/10b981/FFFFFF?text=Vegetables"
+    image: "../hero.png"
   },
   {
     id: "gaming-headset",
@@ -70,7 +70,7 @@ window.products = [
     oldPrice: 8000,
     category: "Electronics",
     color: "neon-blue",
-    image: "https://placehold.co/600x800/1e293b/FFFFFF?text=Headset"
+    image: "https://www.lapcare.com/cdn/shop/files/1_bf42ef6f-840c-40a9-9a21-48500b25e499.webp?v=1757326064"
   },
   {
     id: "jeans-sale",
@@ -80,25 +80,25 @@ window.products = [
     oldPrice: 4000,
     category: "Clothing",
     color: "neon-pink",
-    image: "https://placehold.co/600x800/ec4899/FFFFFF?text=Jeans"
+    image: "https://cdn-images.farfetch-contents.com/24/09/75/18/24097518_54198785_1000.jpg"
   },
   {
     id: "coffee-voucher",
-    title: "Student Coffee Voucher",
+    title: "Cold Coffee (Student Special - ID Required)",
     store: "Local Cafe",
     price: 500,
     oldPrice: 1000,
     category: "Student Offers",
     color: "indigo-500",
-    image: "https://placehold.co/600x800/6366f1/FFFFFF?text=Coffee"
+    image: "https://www.sharmispassions.com/wp-content/uploads/2020/02/iced-coffee-recipe.jpg"
   },
   {
     id: "milk-jug",
-    title: "Fresh Milk Jug (2L)",
+    title: "Fresh Milk Jug (500ML)",
     store: "Mellow Groceries",
     price: 150,
     category: "Groceries",
     color: "green-500",
-    image: "https://placehold.co/600x800/10b981/FFFFFF?text=Milk"
+    image: "https://tiimg.tistatic.com/fp/1/007/766/pack-of-500-ml-fresh-and-pure-amul-taaza-skimmed-refreshing-toned-milk-703.jpg"
   }
 ];
